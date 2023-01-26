@@ -1,0 +1,216 @@
+// Задание (1)
+// let text = document.querySelector('p')
+// let inp = document.querySelector('input')
+// inp.addEventListener('blur', func)
+// function func(){
+// text.textContent = text.textContent + ' ' + inp.value
+// }
+
+// Задание (2)
+// elems = document.querySelectorAll('.aaa')
+// let text = document.querySelector('p')
+// let btn = document.querySelector('#button')
+// btn.addEventListener('click', func)
+// function func(){
+// let sum = 0;
+// for(let elem of elems){
+// sum += +elem.value
+// }
+// text.textContent = sum
+// }
+
+// Задание (3)
+// let elem = document.querySelector('input')
+// elem.addEventListener('blur', function(){
+// let arr = elem.value.split('');
+// let sum = 0;
+// for(let num of arr){
+// sum += +num
+//     }
+// elem.value = sum
+//  })
+
+// Задание (4)
+// let inp = document.querySelector('input')
+// inp.addEventListener('blur', function(){
+// let arr = inp.value.split(',')
+// let sum = 0;
+// for(let elem of arr){
+// sum += +elem
+//     }
+// let res = sum / arr.length
+// inp.value = res
+// })
+
+// Задание (5)
+// let fio = document.querySelector('#fio')
+// let name = document.querySelector('#name')
+// let surname = document.querySelector('#surname')
+// let otch = document.querySelector('#otch')
+// fio.addEventListener('blur', func)
+// function func(){
+// let arr = fio.value.split(" ")
+// name.value = arr[0];
+// surname.value = arr[1]
+// otch.value = arr[2]
+// }
+
+// Задание (6)
+// let inp = document.querySelector('input')
+// inp.addEventListener('blur', func)
+// function func(){
+// let arr = inp.value.split(' ')
+// let str = ''
+// for ( let elem of arr){
+// let elem1 = elem[0].toUpperCase() + elem.slice(1)
+// str += elem1
+// str += " "
+// }
+// inp.value = str
+// }
+
+// Задание (7)
+// let inp = document.querySelector('input')
+// let text = document.querySelector('p')
+// inp.addEventListener('blur', func)
+// function func(){
+// let arr = inp.value.split('')
+// let res = arr.length
+// console.log(res)
+// text.textContent = res
+// }
+
+// Задание (8)
+// let inp = document.querySelector('input')
+// inp.addEventListener('blur', function(){
+// let date = inp.value.split('.')
+// let ndate = date.reverse()
+// let res = ndate.join('-')
+// inp.value = res
+// })
+
+// Задание (9)
+// let btn = document.querySelector('#btn')
+// let elem = document.querySelector('#elem')
+// btn.addEventListener('click', function(){
+// let text1 = elem.value
+// let arr = text1.split('')
+// let arr2 = arr.reverse();
+// let text2 = arr2.join('')
+// if( text1 == text2){
+// console.log('yes')
+// } else (console.log('no'))
+//  })
+
+// Задание (10)
+// let elem = document.querySelector('input')
+// elem.addEventListener('blur', function(){
+// let str = elem.value
+// let a = str.indexOf('3', 0)
+// if(a == '-1'){console.log('no')} else(console.log('yes'))
+// })
+
+// Задание (11)
+// let elems = document.querySelectorAll('p')
+// let btn = document.querySelector('#btn')
+
+// btn.addEventListener('click', function(){
+// for(let i =0; i < elems.length; ){
+// let elem = elems[i++]
+// elem.textContent = elem.textContent + ' ' + i
+//     }
+// })
+
+// Задание (12)
+// let as = document.querySelectorAll('a')
+// let btn = document.querySelector('#btn')
+// btn.addEventListener('click', function(){
+//     for(let elem of as){
+//         elem.textContent = elem.textContent + "(" + elem.href +")"
+//     }
+// } )
+
+// Задание (13) -
+
+
+// Задание (14)
+// let elems = document.querySelectorAll('p')
+// for(let elem of elems){
+//     elem.addEventListener('click', function(){
+//         elem.textContent = elem.textContent * elem.textContent
+//     })
+// }
+
+// Задание (15)
+// let elem = document.querySelector('input')
+// elem.addEventListener('blur', func)
+// function func() {
+// let dayWeak = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+// let str = elem.value;
+// let arr = str.split('.');
+// let arr2 = arr.reverse();
+// let str1 = arr2.join(',')
+// let date = new Date(str1);
+// let day = date.getDay();
+// let p = document.getElementById('text');
+// elem.value = dayWeak[day];
+// }
+
+// Задание (16)
+// let elem = document.querySelector('#elem')
+// let btn1 = document.querySelector('#btn1')
+// let btn2 = document.querySelector('#btn2')
+// btn1.addEventListener('click', function(){
+// if(elem.value >= 0){
+// elem.value = +elem.value + 1
+//     }
+// })
+// btn2.addEventListener('click', function(){
+// elem.value = +elem.value - 1
+// })
+
+// Задание (17)
+//  let elem = document.querySelectorAll('p')
+//  let itog = document.querySelector('input')
+//  for(let part of elem){
+//     part.addEventListener('click', function(){
+//         itog.value = +itog.value + 1
+//     })
+//  }
+
+// Задание (18)
+//  let texts = document.querySelectorAll('div')
+// for(let elem of texts){
+//     elem.textContent = elem.textContent.slice(0, 10) + '...'
+// }
+
+// Задание (19)
+// let elem = document.querySelector('input')
+//  elem.addEventListener('blur', function(){
+//     if(+elem.value > 0 & +elem.value < 100){
+//     elem.style.color = 'green'
+//  } else { elem.style.color = 'red'}})
+
+// Задание (20)
+// let elem = document.querySelector('#elem')
+// let btn = document.querySelector('#btn')
+// btn.addEventListener('click', function(){
+// let str = ''
+// let letters = "1234567890qwertyuiopasdfghjklzxcvbnm"
+// for(let i = 0; i < 8; i++){
+// str += letters.charAt(Math.floor(Math.random()*letters.length))
+// elem.value = str
+//     }
+// })
+
+// Задание (21)
+// let elem = document.querySelector('#elem')
+// let btn = document.querySelector('#btn')
+// btn.addEventListener('click', function(){
+// let text2 = ''
+// let text = elem.value
+// for(let i = 0; i < text.length; i++){
+// text2 += text.charAt(Math.floor(Math.random()*text.length))
+// elem.value = text2
+//             }
+// })
